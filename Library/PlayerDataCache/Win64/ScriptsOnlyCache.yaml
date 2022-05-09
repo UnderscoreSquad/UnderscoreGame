@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CreditsMenu
     - MenuButtons
+    - MusicLoop
     - OptionsMenu
     - SetVolume
     Unity.2D.Animation.Editor.dll:
@@ -23,6 +24,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     - TMPro.TMP_SubMeshUI
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -55,60 +64,68 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11244}
+      Script: {instanceID: 11248}
     - Class: 114
-      Script: {instanceID: 11314}
+      Script: {instanceID: 11318}
     - Class: 114
-      Script: {instanceID: 11540}
+      Script: {instanceID: 11544}
     - Class: 114
-      Script: {instanceID: 11590}
+      Script: {instanceID: 11594}
     - Class: 114
-      Script: {instanceID: 11948}
+      Script: {instanceID: 11952}
     - Class: 114
-      Script: {instanceID: 12050}
+      Script: {instanceID: 12054}
     - Class: 114
-      Script: {instanceID: 12084}
+      Script: {instanceID: 12088}
     - Class: 114
-      Script: {instanceID: 12256}
+      Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 12310}
+      Script: {instanceID: 12314}
     - Class: 114
-      Script: {instanceID: 12542}
+      Script: {instanceID: 12546}
     - Class: 114
-      Script: {instanceID: 12608}
+      Script: {instanceID: 12612}
     - Class: 114
-      Script: {instanceID: 12770}
+      Script: {instanceID: 12774}
     - Class: 114
-      Script: {instanceID: 12960}
+      Script: {instanceID: 12964}
     - Class: 114
-      Script: {instanceID: 13306}
+      Script: {instanceID: 13310}
     - Class: 114
-      Script: {instanceID: 13324}
+      Script: {instanceID: 13328}
     - Class: 114
-      Script: {instanceID: 13620}
+      Script: {instanceID: 13624}
     - Class: 114
-      Script: {instanceID: 13722}
+      Script: {instanceID: 13726}
     - Class: 114
-      Script: {instanceID: 13996}
+      Script: {instanceID: 14000}
     - Class: 114
-      Script: {instanceID: 14276}
+      Script: {instanceID: 14280}
     - Class: 114
-      Script: {instanceID: 14334}
+      Script: {instanceID: 14338}
     - Class: 114
-      Script: {instanceID: 14354}
+      Script: {instanceID: 14358}
     - Class: 114
-      Script: {instanceID: 14378}
+      Script: {instanceID: 14382}
+    - Class: 114
+      Script: {instanceID: 22434}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -690,7 +707,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 391aa4a0e263f174900c5cb7cad84a9a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MusicLoop
   platform: 19
   scenePathNames:
   - Assets/Scenes/0 Title Screen.unity
-  playerPath: D:/Games/_Our Games/UnderscoreGame/Version 0.0.2.1/UG-version-0.0.2.1/UnderscoreGame.exe
+  playerPath: D:/Games/_Our Games/UnderscoreGame/Version 0.0.2.2/UG-version-0.0.2.2/UnderscoreGame.exe

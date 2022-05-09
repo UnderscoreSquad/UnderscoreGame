@@ -3229,6 +3229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 570220875}
   - component: {fileID: 570220874}
+  - component: {fileID: 570220876}
   m_Layer: 0
   m_Name: PleaseDoNotDeleteOkay
   m_TagString: Untagged
@@ -3248,7 +3249,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 5649365257502216035, guid: af85539d8c052c045b925b866aca1de1,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 6b2e6fb8cd2e83947ad4491d686ee8b2, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.69
   m_Pitch: 1
   Loop: 1
@@ -3347,6 +3348,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &570220876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570220873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 970ed03ea4c37874e8142a633a82c433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 570220874}
+  musicStart: {fileID: 8300000, guid: d18b64ff6bdca884093e5eaabf10bfba, type: 3}
 --- !u!1 &602432604
 GameObject:
   m_ObjectHideFlags: 0
@@ -8126,7 +8141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0.0.2.1
+  m_text: 0.0.2.2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 46d3b1b4aef339e4b9af2a39b5d3c1d7, type: 2}
   m_sharedMaterial: {fileID: -1891173926847077334, guid: 46d3b1b4aef339e4b9af2a39b5d3c1d7,
@@ -8889,7 +8904,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4, y: -4}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2017474480

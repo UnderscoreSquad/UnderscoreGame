@@ -5158,7 +5158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &886691327
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9222,7 +9222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1824399856
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10618,6 +10618,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aac6baa77041aca4db1599f397b50f4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FadeScreenOne: {fileID: 2017474478}
+  FadeScreenTwo: {fileID: 1824399855}
+  SplashScreen: {fileID: 886691326}
 --- !u!1 &2017474478
 GameObject:
   m_ObjectHideFlags: 0
@@ -10636,7 +10639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2017474479
 RectTransform:
   m_ObjectHideFlags: 0

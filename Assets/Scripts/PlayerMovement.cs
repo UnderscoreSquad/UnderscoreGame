@@ -1,35 +1,95 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody2D body;
+    public Transform groundCheck;
+    public float groundCheckRadius;
+    public LayerMask ground;
+    public float moveInput;
+    public float playerSpeed;
+    public float playerJumpForce;
 
-    float horizontal;
-    float vertical;
-    float moveLimiter = 0.7f;
+    private Rigidbody2D playerRigidbody2D;
+    private Animator playerAnimator;
 
-    public float runSpeed = 20.0f;
+    private bool playerIsFacingRight = true;
+    private bool playerIsJumping = false;
+    private bool playerIsGrounded = false;
 
-    // Start is called before the first frame update
     void Start()
     {
-        body = GetComponent<Rigidbody2D>();       
+        playerRigidbody2D = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");       
+        playerIsGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, ground);
+
+        moveInput = Input.GetAxis("Horizontal");
+
+        if (playerIsGrounded)
+        {
+            playerAnimator.SetFloat("Velocity", Mathf.Abs(moveInput));
+        }
+
+        if (Input.GetButtonDown("Jump") && playerIsGrounded)
+        {
+            playerIsJumping = true;
+            playerAnimator.SetTrigger("Jump");
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && playerIsGrounded)
+        {
+            playerSpeed = 9.165f;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            playerSpeed = 6.11f;
+        }
+
+        if (Input.GetKeyDown("1") && playerIsGrounded)
+        {
+            playerAnimator.SetTrigger("Special");
+            playerJumpForce = 1100f;
+            playerIsJumping = true;
+        }
+
+        else if (Input.GetKeyUp("1"))
+        {
+            playerJumpForce = 550f;
+        }
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (horizontal != 0 && vertical != 0)
+        playerRigidbody2D.velocity = new Vector2(moveInput * playerSpeed, playerRigidbody2D.velocity.y);
+
+        if (playerIsFacingRight == false && moveInput > 0)
         {
-            horizontal *= moveLimiter;
-            vertical *= moveLimiter;
+            FlipPlayer();
         }
-        body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        else if (playerIsFacingRight == true && moveInput < 0)
+        {
+            FlipPlayer();
+        }
+
+        if (playerIsJumping)
+        {
+            playerRigidbody2D.AddForce(new Vector2(0f, playerJumpForce));
+
+            playerIsJumping = false;
+        }
+    }
+
+    private void FlipPlayer()
+    {
+        playerIsFacingRight = !playerIsFacingRight;
+
+        Vector3 playerScale = transform.localScale;
+        playerScale.x *= -1;
+
+        transform.localScale = playerScale;
     }
 }

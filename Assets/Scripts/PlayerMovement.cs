@@ -49,14 +49,16 @@ public class PlayerMovement : MonoBehaviour
             playerSpeed = 6.11f;
         }
 
-        if (Input.GetKeyDown(KeyCode.S) && playerIsGrounded)
+        if (Input.GetKeyDown("1") && playerIsGrounded)
         {
-            playerAnimator.SetBool("Special", true);
+            playerAnimator.SetTrigger("Special");
+            playerJumpForce = 1100f;
+            playerIsJumping = true;
         }
 
-        else if (Input.GetKeyUp(KeyCode.S))
+        else if (Input.GetKeyUp("1"))
         {
-            playerAnimator.SetBool("Special", false);
+            playerJumpForce = 550f;
         }
     }
 

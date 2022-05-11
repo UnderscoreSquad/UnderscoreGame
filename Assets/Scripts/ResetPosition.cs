@@ -2,16 +2,16 @@
 
 public class ResetPosition : MonoBehaviour
 {
-    public Transform cattoTransform;
-    public Vector3 cattoFirstPosition;
+    public Transform playerTransform;
+    public Vector3 playerFirstPosition;
 
     private void Start()
     {
-        cattoFirstPosition = cattoTransform.transform.position;
+        playerFirstPosition = playerTransform.transform.position;
     }
 
     private void OnTriggerEnter2D(Collider2D character)
     {
-        character.transform.position = cattoFirstPosition;
+        character.transform.position = playerFirstPosition;
     }
 }

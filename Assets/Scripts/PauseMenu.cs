@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour {
     public GameObject winUI;
     public GameObject fpsText;
     public GameObject objectText;
+    public GameObject heartDisplay;
 
     // Update is called once per frame
     void Update () {
@@ -69,6 +70,7 @@ public class PauseMenu : MonoBehaviour {
         pauseMenuUI.SetActive(false);
         fpsText.SetActive(true);
         objectText.SetActive(true);
+        heartDisplay.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -80,6 +82,7 @@ public class PauseMenu : MonoBehaviour {
         pauseMenuUI.SetActive(true);
         fpsText.SetActive(false);
         objectText.SetActive(false);
+        heartDisplay.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
         Cursor.lockState = CursorLockMode.None;

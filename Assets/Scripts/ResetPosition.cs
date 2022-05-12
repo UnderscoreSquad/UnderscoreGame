@@ -5,62 +5,68 @@ public class ResetPosition : MonoBehaviour
     public Transform playerTransform;
     public Vector3 playerFirstPosition;
 
-    public GameObject LiveHeartOne;
-    public GameObject LiveHeartTwo;
-    public GameObject LiveHeartThree;
-    public GameObject DeadHeartOne;
-    public GameObject DeadHeartTwo;
-    public GameObject DeadHeartThree;
-    public GameObject DeadScreen;
-    public GameObject MainMusic;
-    public GameObject DeadMusic;
+    public GameObject fpsText;
+    public GameObject objectText;
+    public GameObject heartDisplay;
+    public GameObject liveHeartOne;
+    public GameObject liveHeartTwo;
+    public GameObject liveHeartThree;
+    public GameObject deadHeartOne;
+    public GameObject deadHeartTwo;
+    public GameObject deadHeartThree;
+    public GameObject deadScreen;
+    public GameObject mainMusic;
+    public GameObject deadMusic;
 
     private void Start()
     {
         playerFirstPosition = playerTransform.transform.position;
 
-        LiveHeartOne.SetActive(true);
-        LiveHeartTwo.SetActive(true);
-        LiveHeartThree.SetActive(true);
-        DeadHeartOne.SetActive(false);
-        DeadHeartTwo.SetActive(false);
-        DeadHeartThree.SetActive(false);
-        DeadScreen.SetActive(false);
+        liveHeartOne.SetActive(true);
+        liveHeartTwo.SetActive(true);
+        liveHeartThree.SetActive(true);
+        deadHeartOne.SetActive(false);
+        deadHeartTwo.SetActive(false);
+        deadHeartThree.SetActive(false);
+        deadScreen.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D character)
     {
-        if (LiveHeartOne.activeSelf)
+        if (liveHeartOne.activeSelf)
         {
-            LiveHeartOne.SetActive(false);
-            DeadHeartOne.SetActive(true);
+            liveHeartOne.SetActive(false);
+            deadHeartOne.SetActive(true);
+            character.transform.position = playerFirstPosition;
         }
 
-        else if (!LiveHeartOne.activeSelf)
+        else if (!liveHeartOne.activeSelf)
         {
-            if (LiveHeartTwo.activeSelf)
+            if (liveHeartTwo.activeSelf)
             {
-                LiveHeartTwo.SetActive(false);
-                DeadHeartTwo.SetActive(true);
+                liveHeartTwo.SetActive(false);
+                deadHeartTwo.SetActive(true);
+                character.transform.position = playerFirstPosition;
             }
 
-            else if (!LiveHeartTwo.activeSelf)
+            else if (!liveHeartTwo.activeSelf)
             {
-                if (LiveHeartThree.activeSelf)
+                if (liveHeartThree.activeSelf)
                 {
-                    LiveHeartThree.SetActive(false);
-                    DeadHeartThree.SetActive(true);
-                    DeadScreen.SetActive(true);
+                    liveHeartThree.SetActive(false);
+                    deadHeartThree.SetActive(true);
+                    deadScreen.SetActive(true);
 
                     Time.timeScale = 0f;
                     Cursor.lockState = CursorLockMode.None;
                     Cursor.visible = true;
-                    MainMusic.SetActive(false);
-                    DeadMusic.SetActive(true);
+                    fpsText.SetActive(false);
+                    objectText.SetActive(false);
+                    heartDisplay.SetActive(false);
+                    mainMusic.SetActive(false);
+                    deadMusic.SetActive(true);
                 }
             }
         }
-
-        character.transform.position = playerFirstPosition;
     }
 }

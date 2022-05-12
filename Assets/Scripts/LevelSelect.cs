@@ -20,12 +20,12 @@ public class LevelSelect : MonoBehaviour
         titleUI.SetActive(true);
     }
 
-    public void SplashPlayLevel1()
+    public void SplashPlayLevel0()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
-    public void PlayLevel1()
+    public void PlayLevel0()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }

@@ -8,6 +8,7 @@ public class WinScreen : MonoBehaviour
     public GameObject WinnerMenu;
     public GameObject fpsText;
     public GameObject objectText;
+    public GameObject heartDisplay;
     public GameObject mainMusic;
     public GameObject winMusic;
 
@@ -19,6 +20,7 @@ public class WinScreen : MonoBehaviour
         WinnerMenu.SetActive(true);
         fpsText.SetActive(false);
         objectText.SetActive(false);
+        heartDisplay.SetActive(false);
         mainMusic.SetActive(false);
         winMusic.SetActive(true);
     }

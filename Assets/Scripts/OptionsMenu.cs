@@ -8,6 +8,7 @@ public class OptionsMenu : MonoBehaviour
 {
     public GameObject titlepauseUI;
     public GameObject optionsUI;
+    public GameObject fpsCounter;
     public TMP_Dropdown resolutionDropdown;
     float currentVolume;
     float currentSFXVolume;

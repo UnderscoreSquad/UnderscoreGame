@@ -148,7 +148,7 @@ RectTransform:
   m_GameObject: {fileID: 15095911}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2500038, y: 1.2500038, z: 1.2500038}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
   m_Father: {fileID: 161177192}
   m_RootOrder: 0
@@ -4136,8 +4136,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -20, y: -0.5}
-  m_SizeDelta: {x: 20, y: -3}
+  m_AnchoredPosition: {x: -27.5, y: -0.5}
+  m_SizeDelta: {x: 5, y: -3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604341844
 MonoBehaviour:
@@ -4194,7 +4194,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 514
+  m_textAlignment: 513
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -7286,7 +7286,7 @@ RectTransform:
   m_GameObject: {fileID: 1255861491}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2500038, y: 1.2500038, z: 1.2500038}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children: []
   m_Father: {fileID: 1093698669}
   m_RootOrder: 0
@@ -11432,6 +11432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titlepauseUI: {fileID: 326617977}
   optionsUI: {fileID: 161177191}
+  fpsCounter: {fileID: 0}
   resolutionDropdown: {fileID: 1423343250}
 --- !u!114 &2016222390
 MonoBehaviour:

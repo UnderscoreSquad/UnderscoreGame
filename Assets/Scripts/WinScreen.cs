@@ -20,7 +20,7 @@ public class WinScreen : MonoBehaviour
         WinnerMenu.SetActive(true);
         fpsText.SetActive(false);
         objectText.SetActive(false);
-        heartDisplay.SetActive(false);
+        heartDisplay.transform.position = new Vector2(1000f, 1000f);
         mainMusic.SetActive(false);
         winMusic.SetActive(true);
     }

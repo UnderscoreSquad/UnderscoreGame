@@ -12,6 +12,8 @@ public class MenuFade : MonoBehaviour
     public GameObject fpsText;
     public GameObject objectText;
     public GameObject heartDisplay;
+    public GameObject Player;
+    public GameObject Camera;
 
     private Animator screenAnimator;
 
@@ -28,7 +30,9 @@ public class MenuFade : MonoBehaviour
         winScreen.SetActive(false);
         fpsText.SetActive(true);
         objectText.SetActive(true);
-        heartDisplay.SetActive(true);
+        heartDisplay.transform.position = new Vector2(0f, 0f);
+        Player.transform.position = new Vector2(Player.transform.position.x, 91.9f);
+        Camera.transform.Translate(0f, -100f, 0f);
         Time.timeScale = 1f;
     }
 

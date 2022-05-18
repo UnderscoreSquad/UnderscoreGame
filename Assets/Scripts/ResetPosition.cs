@@ -62,7 +62,7 @@ public class ResetPosition : MonoBehaviour
                     Cursor.visible = true;
                     fpsText.SetActive(false);
                     objectText.SetActive(false);
-                    heartDisplay.SetActive(false);
+                    heartDisplay.transform.position = new Vector2(1000f, 1000f);
                     mainMusic.SetActive(false);
                     deadMusic.SetActive(true);
                 }

@@ -12,7 +12,7 @@ public class PauseMenu : MonoBehaviour {
     public GameObject optionsUI;
     public GameObject creditsUI;
     public GameObject secretUI;
-    public GameObject oobUI;
+    public GameObject deathUI;
     public GameObject winUI;
     public GameObject fpsText;
     public GameObject objectText;
@@ -39,7 +39,7 @@ public class PauseMenu : MonoBehaviour {
             {
                 return;
             }
-            if (oobUI.activeSelf)
+            if (deathUI.activeSelf)
             {
                 return;
             }
@@ -70,7 +70,7 @@ public class PauseMenu : MonoBehaviour {
         pauseMenuUI.SetActive(false);
         fpsText.SetActive(true);
         objectText.SetActive(true);
-        heartDisplay.SetActive(true);
+        heartDisplay.transform.position = new Vector2(0f, 0f);
         Time.timeScale = 1f;
         GameIsPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -82,7 +82,7 @@ public class PauseMenu : MonoBehaviour {
         pauseMenuUI.SetActive(true);
         fpsText.SetActive(false);
         objectText.SetActive(false);
-        heartDisplay.SetActive(false);
+        heartDisplay.transform.position = new Vector2(1000f, 1000f);
         Time.timeScale = 0f;
         GameIsPaused = true;
         Cursor.lockState = CursorLockMode.None;

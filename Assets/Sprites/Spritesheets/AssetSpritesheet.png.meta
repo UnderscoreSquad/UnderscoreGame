@@ -37,7 +37,7 @@ TextureImporter:
     second: DemonDifficultyF
   - first:
       213: -1150727851668777293
-    second: StarF
+    second: LevelStarF
   - first:
       213: 4840995008430358386
     second: FullHeartF
@@ -145,7 +145,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -157,7 +157,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -315,7 +315,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StarF
+      name: LevelStarF
       rect:
         serializedVersion: 2
         x: 10

@@ -14,6 +14,7 @@ public class PauseMenu : MonoBehaviour {
     public GameObject secretUI;
     public GameObject deathUI;
     public GameObject winUI;
+    public GameObject loadUI;
     public GameObject fpsText;
     public GameObject objectText;
     public GameObject heartDisplay;
@@ -47,6 +48,12 @@ public class PauseMenu : MonoBehaviour {
             {
                 return;
             }
+            if (loadUI.activeSelf)
+            {
+                return;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
             if (pauseMenuUI.activeSelf)
             {
                 Cursor.lockState = CursorLockMode.Locked;
@@ -70,7 +77,7 @@ public class PauseMenu : MonoBehaviour {
         pauseMenuUI.SetActive(false);
         fpsText.SetActive(true);
         objectText.SetActive(true);
-        heartDisplay.transform.Translate(0f, -100f, 0f);
+        heartDisplay.transform.localScale = new Vector3(1f, 1f, 1f);
         Time.timeScale = 1f;
         GameIsPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -82,7 +89,7 @@ public class PauseMenu : MonoBehaviour {
         pauseMenuUI.SetActive(true);
         fpsText.SetActive(false);
         objectText.SetActive(false);
-        heartDisplay.transform.Translate(0f, 100f, 0f);
+        heartDisplay.transform.localScale = new Vector3(0f, 0f, 1f);
         Time.timeScale = 0f;
         GameIsPaused = true;
         Cursor.lockState = CursorLockMode.None;

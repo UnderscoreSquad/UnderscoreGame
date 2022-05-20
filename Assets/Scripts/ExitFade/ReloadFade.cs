@@ -9,6 +9,7 @@ public class ReloadFade : MonoBehaviour
     public GameObject pauseScreen;
     public GameObject deathScreen;
     public GameObject winScreen;
+    public GameObject loadScreen;
     public GameObject fpsText;
     public GameObject objectText;
     public GameObject heartDisplay;
@@ -28,9 +29,10 @@ public class ReloadFade : MonoBehaviour
         pauseScreen.SetActive(false);
         deathScreen.SetActive(false);
         winScreen.SetActive(false);
-        fpsText.SetActive(true);
-        objectText.SetActive(true);
-        heartDisplay.transform.Translate(0f, -100f, 0f);
+        loadScreen.SetActive(true);
+        fpsText.SetActive(false);
+        objectText.SetActive(false);
+        heartDisplay.transform.localScale = new Vector3(0f, 0f, 1f);
         Player.transform.position = new Vector2(Player.transform.position.x, 91.9f);
         Camera.transform.Translate(0f, -100f, 0f);
         Time.timeScale = 1f;

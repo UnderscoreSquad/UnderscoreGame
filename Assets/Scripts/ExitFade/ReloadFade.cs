@@ -30,7 +30,7 @@ public class ReloadFade : MonoBehaviour
         winScreen.SetActive(false);
         fpsText.SetActive(true);
         objectText.SetActive(true);
-        heartDisplay.transform.position = new Vector2(0f, 0f);
+        heartDisplay.transform.Translate(0f, -100f, 0f);
         Player.transform.position = new Vector2(Player.transform.position.x, 91.9f);
         Camera.transform.Translate(0f, -100f, 0f);
         Time.timeScale = 1f;

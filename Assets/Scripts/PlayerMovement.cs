@@ -2,11 +2,14 @@
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private bool isWalking;
+
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask ground;
     public float moveInput;
-    public float playerSpeed;
+    public float walkSpeed;
+    public float runSpeed;
     public float playerJumpForce;
 
     private Rigidbody2D playerRigidbody2D;
@@ -41,12 +44,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && playerIsGrounded)
         {
-            playerSpeed = 9.165f;
+            playerAnimator.SetBool("Run", true);
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            playerSpeed = 6.11f;
+            playerAnimator.SetBool("Run", false);
         }
 
         if (Input.GetKeyDown("1") && playerIsGrounded)
@@ -60,11 +63,29 @@ public class PlayerMovement : MonoBehaviour
         {
             playerJumpForce = 550f;
         }
+
+        if (Input.GetKeyDown(KeyCode.S) && playerIsGrounded)
+        {
+            playerAnimator.SetBool("Crouch", true);
+            walkSpeed = 4.073f;
+            runSpeed = 6.11f;
+            playerJumpForce = 366.67f;
+        }
+
+        else if (Input.GetKeyUp(KeyCode.S))
+        {
+            playerAnimator.SetBool("Crouch", false);
+            walkSpeed = 6.11f;
+            runSpeed = 9.165f;
+            playerJumpForce = 550f;
+        }
     }
 
     private void FixedUpdate()
     {
-        playerRigidbody2D.velocity = new Vector2(moveInput * playerSpeed, playerRigidbody2D.velocity.y);
+        float speed;
+        IsRunning(out speed);
+        playerRigidbody2D.velocity = new Vector2(moveInput * speed, playerRigidbody2D.velocity.y);
 
         if (playerIsFacingRight == false && moveInput > 0)
         {
@@ -91,5 +112,11 @@ public class PlayerMovement : MonoBehaviour
         playerScale.x *= -1;
 
         transform.localScale = playerScale;
+    }
+
+    private void IsRunning(out float speed)
+    {
+        isWalking = !Input.GetKey(KeyCode.LeftShift);
+        speed = isWalking ? walkSpeed : runSpeed;
     }
 }

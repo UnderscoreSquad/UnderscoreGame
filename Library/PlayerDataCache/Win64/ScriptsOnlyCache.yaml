@@ -26,6 +26,7 @@ ScriptsOnlyBuild:
     - WinScreen
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
+    - UnityEditor.U2D.Animation.SkinningCachePersistentState
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -46,6 +47,7 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnimatorStateTransitionInspector
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
@@ -955,7 +957,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: ee9944e22525d0016a54207be54ac76e
+      Hash: 15e8f282eafd06e66a368652594f6e80
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -1138,4 +1140,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/0 Splash Title Screen.unity
   - Assets/Scenes/1 Title Screen.unity
   - Assets/Scenes/2 Level 0.unity
-  playerPath: D:/Games/_Our Games/UnderscoreGame/Version 0.0.7/_Development Builds/UG-version-0.0.7-beta-3/UnderscoreGame.exe
+  playerPath: D:/Games/_Our Games/UnderscoreGame/Version 0.0.7/_Development Builds/UG-version-0.0.7-beta-4/UnderscoreGame.exe

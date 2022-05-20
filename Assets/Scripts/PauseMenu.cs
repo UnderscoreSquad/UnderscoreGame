@@ -70,7 +70,7 @@ public class PauseMenu : MonoBehaviour {
         pauseMenuUI.SetActive(false);
         fpsText.SetActive(true);
         objectText.SetActive(true);
-        heartDisplay.transform.position = new Vector2(0f, 0f);
+        heartDisplay.transform.Translate(0f, -100f, 0f);
         Time.timeScale = 1f;
         GameIsPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -82,7 +82,7 @@ public class PauseMenu : MonoBehaviour {
         pauseMenuUI.SetActive(true);
         fpsText.SetActive(false);
         objectText.SetActive(false);
-        heartDisplay.transform.position = new Vector2(1000f, 1000f);
+        heartDisplay.transform.Translate(0f, 100f, 0f);
         Time.timeScale = 0f;
         GameIsPaused = true;
         Cursor.lockState = CursorLockMode.None;

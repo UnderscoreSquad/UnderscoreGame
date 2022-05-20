@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: a5b2ae2dd415cea408659f6799406b95
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3168696588556058630
+    second: UnderscoreGameF
+  - first:
+      213: 8181824925135040789
+    second: EasyDifficultyF
+  - first:
+      213: 4896471779240346503
+    second: AssetSpritesheet_2
+  - first:
+      213: -3753391956957557451
+    second: AssetSpritesheet_3
+  - first:
+      213: 2167077395289749359
+    second: NormalDifficultyF
+  - first:
+      213: -3701386269821668826
+    second: AssetSpritesheet_5
+  - first:
+      213: 9139185029635909272
+    second: AssetSpritesheet_6
+  - first:
+      213: 9045721809264137145
+    second: HardDifficultyF
+  - first:
+      213: -5346395360727497005
+    second: HarderDifficultyF
+  - first:
+      213: 5520403216135039886
+    second: InsaneDifficultyF
+  - first:
+      213: -3477000386657560582
+    second: DemonDifficultyF
+  - first:
+      213: -1150727851668777293
+    second: StarF
+  - first:
+      213: 4840995008430358386
+    second: FullHeartF
+  - first:
+      213: -8657067458916444241
+    second: HalfHeartF
+  - first:
+      213: -2653145173102735600
+    second: EmptyHeartF
+  - first:
+      213: -6186839653028750410
+    second: YouTubeLinkF
+  - first:
+      213: 5553969819260825457
+    second: DiscordLinkF
+  - first:
+      213: 3880673309014517298
+    second: NewgroundsLinkF
+  - first:
+      213: 6839739057833762369
+    second: AchievementF
+  - first:
+      213: 3781456242830716806
+    second: LevelMenuF
+  - first:
+      213: -4276614288867671447
+    second: WorkInProgressF
+  - first:
+      213: 1696027125082508369
+    second: CursorF
+  - first:
+      213: -4952513409518770512
+    second: ProgressBarF
+  - first:
+      213: -1239682169016311303
+    second: DownloadButtonF
+  - first:
+      213: -1590664826576172538
+    second: UploadButtonF
+  - first:
+      213: 4547252582227738853
+    second: XButtonF
+  - first:
+      213: 940536608072838107
+    second: RefreshButtonF
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UnderscoreGameF
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 169
+        width: 124
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affbf1ebd378604d0800000000000000
+      internalID: -3168696588556058630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EasyDifficultyF
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 163
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5117c159b6eab8170800000000000000
+      internalID: 8181824925135040789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalDifficultyF
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 163
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67360bc861031e10800000000000000
+      internalID: 2167077395289749359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardDifficultyF
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 163
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3513a2f0cd88d70800000000000000
+      internalID: 9045721809264137145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HarderDifficultyF
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 163
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d68a0feeb9cdc5b0800000000000000
+      internalID: -5346395360727497005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InsaneDifficultyF
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 163
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b27aa0a796c9c40800000000000000
+      internalID: 5520403216135039886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonDifficultyF
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 163
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7516df1963fbfc0800000000000000
+      internalID: -3477000386657560582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarF
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 137
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b65220ad1bc700f0800000000000000
+      internalID: -1150727851668777293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullHeartF
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 138
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f3eecbf4bae2340800000000000000
+      internalID: 4840995008430358386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartF
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 138
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa711b2630bebd780800000000000000
+      internalID: -8657067458916444241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmptyHeartF
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 138
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f4ba3a5822e2bd0800000000000000
+      internalID: -2653145173102735600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YouTubeLinkF
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 133
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb9be66d1ee32aa0800000000000000
+      internalID: -6186839653028750410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiscordLinkF
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 133
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f284adf1aa31d40800000000000000
+      internalID: 5553969819260825457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewgroundsLinkF
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 133
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236662950dbead530800000000000000
+      internalID: 3880673309014517298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AchievementF
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 121
+        width: 114
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14edb824f62abee50800000000000000
+      internalID: 6839739057833762369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LevelMenuF
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 12
+        width: 127
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fab97fa6e6a7430800000000000000
+      internalID: 3781456242830716806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorkInProgressF
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 77
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962cea676f966a4c0800000000000000
+      internalID: -4276614288867671447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CursorF
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 91
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c48ff2faf798710800000000000000
+      internalID: 1696027125082508369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProgressBarF
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 90
+        width: 73
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b666482b43254bb0800000000000000
+      internalID: -4952513409518770512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownloadButtonF
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 36
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1a569a2a3cbcee0800000000000000
+      internalID: -1239682169016311303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UploadButtonF
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 36
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a083794c2dce9e0800000000000000
+      internalID: -1590664826576172538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XButtonF
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 36
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e089a391261b1f30800000000000000
+      internalID: 4547252582227738853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RefreshButtonF
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 36
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbae66df057d0d00800000000000000
+      internalID: 940536608072838107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,6 +14,7 @@ public class ResetPosition : MonoBehaviour
     public GameObject deadHeartOne;
     public GameObject deadHeartTwo;
     public GameObject deadHeartThree;
+    public GameObject instantDeadHearts;
     public GameObject deadScreen;
     public GameObject mainMusic;
     public GameObject deadMusic;
@@ -54,7 +55,8 @@ public class ResetPosition : MonoBehaviour
                 if (liveHeartThree.activeSelf)
                 {
                     liveHeartThree.SetActive(false);
-                    deadHeartThree.SetActive(true);
+                    deadHeartThree.SetActive(false);
+                    instantDeadHearts.SetActive(true);
                     deadScreen.SetActive(true);
 
                     Time.timeScale = 0f;
@@ -62,7 +64,7 @@ public class ResetPosition : MonoBehaviour
                     Cursor.visible = true;
                     fpsText.SetActive(false);
                     objectText.SetActive(false);
-                    heartDisplay.transform.position = new Vector2(1000f, 1000f);
+                    heartDisplay.transform.localScale = new Vector3(0f, 0f, 1f);
                     mainMusic.SetActive(false);
                     deadMusic.SetActive(true);
                 }

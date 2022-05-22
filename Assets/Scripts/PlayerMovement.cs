@@ -11,12 +11,14 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed;
     public float runSpeed;
     public float playerJumpForce;
+    public float playerJetpackForce;
 
     private Rigidbody2D playerRigidbody2D;
     private Animator playerAnimator;
 
     private bool playerIsFacingRight = true;
     private bool playerIsJumping = false;
+    private bool playerIsUsingJetpack = false;
     private bool playerIsGrounded = false;
 
     void Start()
@@ -55,13 +57,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown("1") && playerIsGrounded)
         {
             playerAnimator.SetTrigger("Special");
-            playerJumpForce = 1100f;
-            playerIsJumping = true;
-        }
-
-        else if (Input.GetKeyUp("1"))
-        {
-            playerJumpForce = 550f;
+            playerIsUsingJetpack = true;
         }
 
         if (Input.GetKeyDown(KeyCode.S) && playerIsGrounded)
@@ -70,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
             walkSpeed = 4.073f;
             runSpeed = 6.11f;
             playerJumpForce = 366.67f;
+            playerJetpackForce = 0f;
         }
 
         else if (Input.GetKeyUp(KeyCode.S))
@@ -78,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
             walkSpeed = 6.11f;
             runSpeed = 9.165f;
             playerJumpForce = 550f;
+            playerJetpackForce = 1100f;
         }
     }
 
@@ -101,6 +99,13 @@ public class PlayerMovement : MonoBehaviour
             playerRigidbody2D.AddForce(new Vector2(0f, playerJumpForce));
 
             playerIsJumping = false;
+        }
+
+        if (playerIsUsingJetpack)
+        {
+            playerRigidbody2D.AddForce(new Vector2(0f, playerJetpackForce));
+
+            playerIsUsingJetpack = false;
         }
     }
 

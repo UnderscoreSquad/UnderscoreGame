@@ -6,7 +6,7 @@ using TMPro;
 
 public class OptionsMenu : MonoBehaviour
 {
-    public GameObject titlepauseUI;
+    public GameObject titlePauseUI;
     public GameObject optionsUI;
     public TMP_Dropdown resolutionDropdown;
     float currentVolume;
@@ -80,12 +80,12 @@ public class OptionsMenu : MonoBehaviour
     public void IntoOptionsMenu()
     {
         optionsUI.SetActive(true);
-        titlepauseUI.SetActive(false);
+        titlePauseUI.SetActive(false);
     }
 
     public void OutOfOptionsMenu()
     {
         optionsUI.SetActive(false);
-        titlepauseUI.SetActive(true);
+        titlePauseUI.SetActive(true);
     }
 }

@@ -5,18 +5,18 @@ using UnityEngine;
 public class ControlsMenu : MonoBehaviour
 {
     public GameObject controlsUI;
-    public GameObject titleUI;
+    public GameObject titlePauseUI;
 
     public void ToControlsMenu()
     {
         controlsUI.SetActive(true);
-        titleUI.SetActive(false);
+        titlePauseUI.SetActive(false);
     }
 
     public void ToTitleMenu()
     {
         controlsUI.SetActive(false);
-        titleUI.SetActive(true);
+        titlePauseUI.SetActive(true);
     }
 
 

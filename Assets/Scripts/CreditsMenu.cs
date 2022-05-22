@@ -5,17 +5,17 @@ using UnityEngine;
 public class CreditsMenu : MonoBehaviour
 {
     public GameObject creditsUI;
-    public GameObject titleUI;
+    public GameObject titlePauseUI;
 
     public void ToCreditsMenu()
     {
         creditsUI.SetActive(true);
-        titleUI.SetActive(false);
+        titlePauseUI.SetActive(false);
     }
 
     public void ToTitleMenu()
     {
         creditsUI.SetActive(false);
-        titleUI.SetActive(true);
+        titlePauseUI.SetActive(true);
     }
 }

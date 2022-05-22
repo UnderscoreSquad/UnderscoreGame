@@ -46,7 +46,7 @@ public class InstantDeath : MonoBehaviour
         Cursor.visible = true;
         fpsText.SetActive(false);
         objectText.SetActive(false);
-        heartDisplay.transform.position = new Vector2(1000f, 1000f);
+        heartDisplay.transform.localScale = new Vector3(0f, 0f, 1f);
         mainMusic.SetActive(false);
         deadMusic.SetActive(true);
     }

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/2 Level 0.unity
+- path: Assets/Scenes/0 Splash Title Screen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

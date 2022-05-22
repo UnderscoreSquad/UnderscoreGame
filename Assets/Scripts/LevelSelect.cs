@@ -6,18 +6,18 @@ using UnityEngine.SceneManagement;
 public class LevelSelect : MonoBehaviour
 {
     public GameObject levelSelectUI;
-    public GameObject titleUI;
+    public GameObject chapterUI;
 
     public void ToLevelSelectMenu()
     {
         levelSelectUI.SetActive(true);
-        titleUI.SetActive(false);
+        chapterUI.SetActive(false);
     }
 
-    public void ToTitleMenu()
+    public void ToChapterMenu()
     {
         levelSelectUI.SetActive(false);
-        titleUI.SetActive(true);
+        chapterUI.SetActive(true);
     }
 
     public void SplashPlayLevel0()

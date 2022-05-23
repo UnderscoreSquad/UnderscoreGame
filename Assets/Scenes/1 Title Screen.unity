@@ -8935,7 +8935,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Angel Santoro
 
-    Owen'
+    Owen Emile'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 46d3b1b4aef339e4b9af2a39b5d3c1d7, type: 2}
   m_sharedMaterial: {fileID: -1891173926847077334, guid: 46d3b1b4aef339e4b9af2a39b5d3c1d7,
@@ -13082,7 +13082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858eef46491cb6148abbb634d4400516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titlepauseUI: {fileID: 1264042338}
+  titlePauseUI: {fileID: 1264042338}
   optionsUI: {fileID: 161177191}
   resolutionDropdown: {fileID: 1423343250}
 --- !u!114 &2016222390
@@ -13098,7 +13098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creditsUI: {fileID: 290299334}
-  titleUI: {fileID: 1264042338}
+  titlePauseUI: {fileID: 1264042338}
 --- !u!114 &2016222391
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,2 +1,6 @@
 # UnderscoreGame
-it's a good game
+Welcome to our project "UnderscoreGame", a game heavily inspired on titles like Geometry Dash, KawaiRun, Super Meat Boy, etc.
+
+We decided to start this brand new project just for fun and it is not certain if it will ever be released in a fully-featured state.
+
+If there are any issues with this game you would like to report (i.e. bugs) then please email: underscoresquad@outlook.com
